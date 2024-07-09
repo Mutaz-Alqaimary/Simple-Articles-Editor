@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  background-color: #eee;
+  padding: 15px;
+  width: 700px;
+  margin: 20px auto;
+}
+.editor-box {
+  display: flex;
+  gap: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.editor-box > div:not(div.fonts-size) {
+  background-color: white;
+  width: fit-content;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+.editor-box > div:hover:not(div.fonts-size) {
+  background-color: #ddd;
+}
+div.fonts-size {
+  display: flex;
+  gap: 5px;
+  user-select: none;
+}
+div.fonts-size span {
+  padding: 10px 15px;
+  background-color: white;
+  cursor: pointer;
+  display: block;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+div.fonts-size span:active:not(:nth-child(2)) {
+  background-color: #ddd;
+}
+p {
+  line-height: 1.6;
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0 0;
+}
+select {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  appearance: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.active-button {
+  font-weight: bold;
+  color: #009688;
+  background-color: #ddd !important;
+}
+.bold {
+  font-weight: bold;
+}
+.filter-invert {
+  filter: invert();
+  -webkit-filter: invert();
+}
